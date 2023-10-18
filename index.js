@@ -40,3 +40,19 @@ const s = "ababa";
 const ps = s.split("").reverse().join("");
 
 console.log(s === ps);
+
+function alp(s) {
+  return s.split("").sort().join("");
+}
+
+console.log(alp("qf23fegweweewe"));
+
+let capss = "";
+function cap(s) {
+  s.split(" ").forEach((e) => {
+    capss += e[0].toUpperCase() + e.substr(1) + " ";
+  });
+  return capss;
+}
+
+console.log(cap("hello there"));
