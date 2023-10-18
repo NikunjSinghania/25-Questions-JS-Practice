@@ -56,3 +56,15 @@ function cap(s) {
 }
 
 console.log(cap("hello there"));
+
+let obj = {};
+function occ(s) {
+  s.split("").forEach((e) => {
+    if (obj.hasOwnProperty(e)) obj[e]++;
+    else obj[e] = 1;
+  });
+
+  return obj;
+}
+
+console.log(occ("wfqefnqejqjfnvewfhwe"));
