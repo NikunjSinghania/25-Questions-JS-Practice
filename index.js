@@ -28,5 +28,15 @@ console.log(arr.concat(arr));
 arr = [...arr, ...arr];
 console.log(arr);
 
+let num = 123;
 
+let ans = parseFloat((num + "").split("").reverse().join(""));
+ans = parseFloat(num.toString().split("").reverse().join(""));
+ans = Number(num.toString().split("").reverse().join(""));
 
+console.log(ans);
+
+const s = "ababa";
+const ps = s.split("").reverse().join("");
+
+console.log(s === ps);
